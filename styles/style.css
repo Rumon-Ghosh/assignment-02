@@ -111,8 +111,9 @@ nav {
 .plants-sub-title {
   font-family: var(--font-inter);
   font-size: 1.35rem;
+  max-width: 888px;
   color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 3rem;
+  margin:0 auto 3rem;
   text-align: center;
 }
 
@@ -153,6 +154,47 @@ nav {
 
 .cart .primary-btn {
   width: 100%;
+}
+
+/* flower lovers section styles */
+.flowers-lover {
+  display: flex;
+  align-items: center;
+  margin-top: 9rem;
+  gap: 4rem;
+}
+
+.flowers-lover-image {
+  position: relative;
+  flex: 1;
+}
+
+#trusted-badge {
+  max-width: 280px;
+  position: absolute;
+  top: -6rem;
+  right: -6rem;
+}
+
+.flowers-lover-description {
+  flex: 1;
+}
+
+.flower-lover-title {
+  max-width: 540px;
+  font-family: var(--font-noto-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1.25rem;
+}
+
+.flowers-lover-description ul li {
+  font-family: var(--font-inter);
+  font-size: 1.37rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 1.25rem;
 }
 
 /* Mobile responsive */
@@ -201,4 +243,26 @@ nav {
   .plants-container h2 {
     font-size: 2rem;
   }
+
+  /* flower lover section responsive */
+ .flowers-lover {
+  margin: 3.25rem 1.25rem 0 1.25rem ;
+  flex-direction: column;
+  gap: 1.5rem;
+ }
+
+ #trusted-badge {
+  display: none;
+ }
+
+
+
+ .flower-lover-title {
+  font-size: 2rem;
+ }
+
+ .flowers-lover-description > ul > li {
+  margin: 0 1.25rem;
+  font-size: 1.1rem;
+ }
 }
