@@ -33,6 +33,26 @@ img {
   margin: 0 auto;
 }
 
+/* animation */
+
+@keyframes spin-trusted-badge {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
 /* nav styles */
 
 nav {
@@ -174,6 +194,7 @@ nav {
   position: absolute;
   top: -6rem;
   right: -6rem;
+  animation: spin-trusted-badge 5s linear 0s infinite forwards;
 }
 
 .flowers-lover-description {
@@ -508,6 +529,7 @@ nav {
 
  .offer-1 p, .offer-2 p, .offer-3 p {
   font-size: 1.75rem;
+  margin-bottom: 1rem;
  }
 
  .offer-1 a, .offer-2 a, .offer-3 a {
