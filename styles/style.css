@@ -9,6 +9,10 @@ img {
   width: 100%;
 }
 
+body {
+  background-color: #f5f8ff;
+}
+
 /* adding google-fonts */
 :root {
   --font-noto-serif: "Noto Serif", serif;
@@ -91,7 +95,7 @@ nav {
 
 .banner {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 7.5rem;
 }
 
