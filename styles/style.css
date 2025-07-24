@@ -345,6 +345,73 @@ nav {
  flex: 0 1;
 }
 
+/* footer styles */
+.footer-container {
+  display: flex;
+  gap: 5rem;
+  margin: 3.5rem 0;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-description {
+  flex: 2;
+}
+
+.footer-navigation, .footer-features, .footer-social {
+  flex: 1;
+}
+
+.footer-description img {
+  width: 135px;
+  margin-bottom: 1rem;
+}
+
+.footer-description p {
+  font-family: var(--font-inter);
+  font-size: 1.37rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.4;
+}
+
+.footer-navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-navigation ul li a {
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 1.37rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-features ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-features ul li a {
+  text-decoration: none;
+  font-family: var(--font-inter);
+  font-size: 1.37rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-social ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-social ul a img {
+  width: 36px;
+}
+
 /* Mobile responsive */
 @media screen and (max-width: 576px) {
   /* font-size responsive */
@@ -450,5 +517,12 @@ nav {
  /* join section responsive */
  .join-title {
   font-size: 1.75rem;
+ }
+
+ /* footer section responsive */
+ .footer-container {
+  flex-direction: column;
+  gap: 2.5rem;
+   margin: 4rem 1.25rem 1.25rem 1.25rem;
  }
 }
